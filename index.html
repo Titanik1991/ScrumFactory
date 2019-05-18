@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	<!--Первое задание-->
+
+    <title>"My object"</title>
+    <body>
+        <pre>
+            <style>
+        table {
+            border-collapse: collapse;
+            width: 70% ;
+            }
+        table td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+
+<div id="container"></div>
+<pre>
+<script type="text/javascript">
+var container= document.querySelector ("#container")
+createTable (container, 2, 3);
+function creatTable(parent, cols, rows){
+    var table= document.createElement ("table");
+    document.getElementById
+    for (var i= 0; i< rows; i++) {
+        table +="tr";
+        table +="td"+ parent;
+        var tr = document.createElement ("tr");
+
+        for (var j= 0; j< cols; j++) {
+         var td = document.createElement ("td");
+         tr.appendChild(td)
+        }
+        table.appendChild(tr)
+    }
+    parent.appendChild(table)
+}
+</script> 
+
+<script>
+    function resultTable(arr1, arr2) {
+    var result = "<table id='Result' border=2>";
+    for(var i = 0; i < arr1.length; i++) {
+        result += "<tr>";
+        result += "<td>"+arr1[i]+"</td>";
+        result += "<td>"+arr2[i]+"</td>";
+        result += "</tr>";
+    }
+    result += "</table>";
+    return result;
+}
+
+var names = ['Name', 'Age', 'Hair'];
+var score = ['Dima', '34', 'Brown'];
+
+var table = resultTable(names, score);
+document.getElementById('container').innerHTML = table;
+</script>
+
+<!--Второе задание-->
+
+<script>
+    var person= {};
+person.name='Dima';
+if ("name" in person) {
+    alert ("Dima")
+}
+
+</script>
+
+
+<!--Третье, четвертое задание-->
+
+<script>
+    var MyArray = ['1', '2', '3', '4', '5'];
+    alert( MyArray ); // 1,2,3,4,5
+    alert( MyArray[0] ); // 1
+    alert( MyArray[1] ); // 2
+    alert( MyArray[2] ); // 3
+    alert( MyArray[3] ); // 4
+    alert( MyArray[4] ); // 5
+
+</script>
+
+<!--Пятое задание-->
+
+
+<script>
+    public class FizzBuzz {
+        public static void main (String [] args ) {
+            for (int i = 1; i <= 100; ++i) {
+                if (i % (5*3) == 0){
+                    System.out.println ("FizzBuzz");
+                }
+                else if (i % 3 == 0) {
+                    System.out.println("Fizz");
+                }
+                else if (i % 5 == 0) {
+                    System.out.println("Buzz");
+                }
+                else {System.out.println(i);
+                }
+            }
+        }
+    }
+</script>
+<script>
+for (var i=1; i<=100; i++)(function(i){
+  var output = ""
+
+  if (i % 3 == 0)
+   output += "Fizz"
+
+  if (i % 5 == 0)
+   output += "Buzz"
+
+  console.log(output || i)
+})(i)
+</script>
+
+</body>
+</html>
+ 
